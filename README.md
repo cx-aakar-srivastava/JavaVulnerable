@@ -5,6 +5,8 @@ A deliberately vulnerable Java web application from the [Cyber Security and Priv
 
 Every challenge is mapped to a category from the [OWASP Top 10:2025](https://owasp.org/Top10/2025/), and each vulnerable page carries a comment explaining the flaw and the fix.
 
+Changes to test cx-flow.
+
 **Warning:** this application is intentionally insecure. Several challenges give remote code execution inside the container. Running it locally with Docker on your own machine is fine. Do not expose it to the internet and never deploy it on a public facing or production server.
 
 One thing to be aware of: Docker publishes port 9080 on all interfaces, so anyone on the same network can reach the lab. If you are on shared or untrusted wifi, change the port mapping in `docker-compose.yml` to `127.0.0.1:9080:8080` to keep it on your machine only.
